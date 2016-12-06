@@ -7,30 +7,35 @@
 /*}*/
 .wrapper {
     max-width: 1024px;
+    height: 95vh;
     margin: 0 auto;
 }
 .header-welcome {
     color: #ffffff;
-    height: 10vw;
+    height: 10vh;
     width: 100%;
     background: #00008b;
 }
 h1 {
-    line-height: 10vw;
+    line-height: 10vh;
     margin: 0;
     text-align: center;
-    font-size: 5vw;
+    font-size: 5vmin;
 }
+
+.main-top {
+    height: 11vh;
+}
+
 .main-map-container {
     width: 100%;
     margin: 0 auto;
 }
 #map{
-    height: 0;
+    width: 100%;
+    height: 65vh;
     overflow: hidden;
-    padding-bottom: 95%;
 }
 .footer-buttons {
-    /*height: 25%;*/
-    /*width: 100%;*/
+    height: 14vh;
 }
