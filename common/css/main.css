@@ -1,4 +1,36 @@
-#map {
-    height: 500px;
+/*.wrapper {*/
+    /*min-height: 400px;*/
+    /*max-height: 1920px;*/
+    /*min-width: 320px;*/
+    /*max-width: 1080px;*/
+    /*margin: 0 auto;*/
+/*}*/
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.header-welcome {
+    color: #ffffff;
+    height: 10vw;
     width: 100%;
+    background: #00008b;
+}
+h1 {
+    line-height: 10vw;
+    margin: 0;
+    text-align: center;
+    font-size: 5vw;
+}
+.main-map-container {
+    width: 100%;
+    margin: 0 auto;
+}
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 95%;
+}
+.footer-buttons {
+    /*height: 25%;*/
+    /*width: 100%;*/
 }
