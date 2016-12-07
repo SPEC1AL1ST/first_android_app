@@ -1,21 +1,16 @@
-/*.wrapper {*/
-    /*min-height: 400px;*/
-    /*max-height: 1920px;*/
-    /*min-width: 320px;*/
-    /*max-width: 1080px;*/
-    /*margin: 0 auto;*/
-/*}*/
 .wrapper {
     max-width: 1024px;
     height: 95vh;
     margin: 0 auto;
 }
+
 .header-welcome {
     color: #ffffff;
     height: 10vh;
     width: 100%;
     background: #00008b;
 }
+
 h1 {
     line-height: 10vh;
     margin: 0;
@@ -23,19 +18,192 @@ h1 {
     font-size: 5vmin;
 }
 
-.main-top {
+.main-top-home,
+.main-top-map {
     height: 11vh;
+    line-height: 11vh;
+}
+
+.main-top-map {
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size: 0;
+}
+
+.main-top-map-item {
+    display: inline-block;
+    width: 25%;
+}
+
+.main-top-map-item-map img {
+    vertical-align: middle;
+    width: 40%;
+}
+
+.main-top-map-item-loupe img {
+    vertical-align: middle;
+    width: 40%;
+}
+
+.main-top-map-item-book img {
+    vertical-align: middle;
+    width: 40%;
+}
+
+.main-top-map-item-help img {
+    vertical-align: middle;
+    width: 40%;
+}
+
+.main-top-home {
+    background: url("../img/flag(2).png") bottom;
+    background-size: 100%;
+}
+
+.main-top-home img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-home-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    height: 65vh;
+    overflow: auto;
+}
+
+.main-general-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    height: 76vh;
+    overflow: auto;
+}
+
+.stars {
+    padding: 2vmax 0 0;
+    width: 25vmax;
+}
+
+.main-home-welcome {
+    font: 800 3vmax 'Raleway', sans-serif;
+}
+
+.main-about-text,
+.main-general-text {
+    font: 600 3vmax 'Raleway', sans-serif;
+    padding: 0 4vh;
+    text-align: justify;
+}
+.main-general-text {
+    margin: 0;
+}
+.contacts-container,
+.main-about-text {
+    margin-top: 2vh;
+    padding: 0 4vh;
+}
+.contacts-container {
+    text-align: left;
+}
+
+.email {
+    color: #8a1d32;
+    font: 600 5vmin 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.phone {
+    color: #000000;
+    font: 600 6vmin 'Raleway', sans-serif;
+    margin: 3vmin 0;
+}
+
+.billing-address-header,
+.physical-address-header {
+    color: #000000;
+    font: 600 5vmin 'Raleway', sans-serif;
+    margin: 3vmin 0 1vmin 0;
+}
+
+.physical-address-info,
+.billing-address-info {
+    color: #808080;
+    font: 600 5vmin 'Raleway', sans-serif;
+    margin: 0;
+    white-space: pre;
+    /*margin: 3vmin 0;*/
 }
 
 .main-map-container {
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
 }
-#map{
+
+#map {
     width: 100%;
     height: 65vh;
     overflow: hidden;
 }
+
 .footer-buttons {
+    text-align: center;
+    background: #00008b;
+    font-size: 0;
+}
+
+.footer-item {
+    display: inline-block;
     height: 14vh;
+    width: 25%;
+}
+
+.footer-buttons-home {
+    background: #00008b url("../img/home(1).png") no-repeat center;
+    background-size: 50%;
+}
+
+.footer-buttons-home-active {
+    background: #00008b url("../img/home(3).png") no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.footer-buttons-map {
+    background: #00008b url("../img/map(1).png") no-repeat center;
+    background-size: 65%;
+    cursor: pointer;
+}
+
+.footer-buttons-map-active {
+    background: #00008b url("../img/map(3).png") no-repeat center;
+    background-size: 65%;
+    cursor: pointer;
+}
+
+.footer-buttons-about {
+    background: #00008b url("../img/about(1).png") no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.footer-buttons-about-active {
+    background: #00008b url("../img/about(3).png") no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.footer-buttons-contact {
+    background: #00008b url("../img/contact(1).png") no-repeat center;
+    background-size: 65%;
+    cursor: pointer;
+}
+
+.footer-buttons-contact-active {
+    background: #00008b url("../img/contact(3).png") no-repeat center;
+    background-size: 65%;
+    cursor: pointer;
 }

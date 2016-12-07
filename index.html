@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<meta name="viewport"-->
+    <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="common/css/normalize.css">
     <link rel="stylesheet" href="common/css/main.css">
     <title>VETERAN CARE NETWORK</title>
 </head>
@@ -16,23 +18,22 @@
         </div>
     </header>
     <main>
-        <div class="main-top">
-
+        <div class="main-top-home"></div>
+        <div class="main-home-container">
+            <img class="stars" src="common/img/star_black.png" alt="Three Stars">
+            <h2 class="main-home-welcome">WELCOME</h2>
+            <p class="main-general-text">Welcome to Veteran Care Network. It is our goal to direct veterans and their families to nationwide locations of health care resources from one convenient website and mobile App. Our nationwide Veteran Medical Servicesmap has all VA hospitals & clinics, as well. Welcome to the VCN website. It is our goal to direct veterans and their families to nationwide locations of health care resources from one convenient website and mobile APP. Our nationwide Veteran Medical Services map has all VA hospitals & clinics, as well as address and contact information for over 18,000 healthcare facilities and service organizations. Join over 26,000 other veteran owned small businesses (VOSB) already listed and get your company's profile potentially seen by millions of fellow veterans, government agencies, prime contractors, sub contractors, corporate purchasing departments and every day consumers who strongly and proudly support veterans businesses and are right now looking for your products and services.</p>
         </div>
-        <div class="main-map-container">
-            <div id="map"></div>
-        </div>
-        <input type="button" value="Clean" onclick="removeMarkers()">
     </main>
     <footer>
         <div class="footer-buttons">
-            <div class="footer-buttons-home"></div>
+            <div class="footer-item footer-buttons-home footer-buttons-home-active" onclick="location.href='index.html';"></div>
+            <div class="footer-item footer-buttons-map" onclick="location.href='map.html';"></div>
+            <div class="footer-item footer-buttons-about" onclick="location.href='about.html';"></div>
+            <div class="footer-item footer-buttons-contact" onclick="location.href='contact.html';"></div>
         </div>
     </footer>
 </div>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD_YCirF19f4sRUQZVnThpHV1qHU897KQ&callback=initMap">
-</script>
 <script src="common/js/index.js"></script>
 </body>
 </html>

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <!--<meta name="viewport"-->
-          <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="common/css/normalize.css">
     <link rel="stylesheet" href="common/css/main.css">
     <title>VETERAN CARE NETWORK</title>
 </head>
@@ -16,17 +18,31 @@
         </div>
     </header>
     <main>
-        <div class="main-top">
-
+        <div class="main-top-map">
+            <div class="main-top-map-item main-top-map-item-map">
+            <a href="#"><img src="common/img/map.png" alt=""></a>
+            </div>
+            <div class="main-top-map-item main-top-map-item-loupe">
+                <a href="#"><img src="common/img/loupe.png" alt=""></a>
+            </div>
+            <div class="main-top-map-item main-top-map-item-book">
+                <a href="#"><img src="common/img/book.png" alt=""></a>
+            </div>
+            <div class="main-top-map-item main-top-map-item-help">
+                <a href="#"><img src="common/img/help.png" alt=""></a>
+            </div>
         </div>
         <div class="main-map-container">
-        <div id="map"></div>
+            <div id="map"></div>
         </div>
-        <input type="button" value="Clean" onclick="removeMarkers()">
+        <!--<input class="button" type="button" value="Clean" onclick="removeMarkers()">-->
     </main>
     <footer>
         <div class="footer-buttons">
-            <div class="footer-buttons-home"></div>
+            <div class="footer-item footer-buttons-home" onclick="location.href='index.html';"></div>
+            <div class="footer-item footer-buttons-map footer-buttons-map-active" onclick="location.href='map.html';"></div>
+            <div class="footer-item footer-buttons-about" onclick="location.href='about.html';"></div>
+            <div class="footer-item footer-buttons-contact" onclick="location.href='contact.html';"></div>
         </div>
     </footer>
 </div>
