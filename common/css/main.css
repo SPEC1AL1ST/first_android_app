@@ -36,6 +36,7 @@ h1 {
     background: rgba(255, 255, 255, 0.4);
     text-align: center;
     font-size: 0;
+    width: 100%;
 }
 
 .main-top-map-item {
@@ -45,22 +46,22 @@ h1 {
 
 .main-top-map-item-map img {
     vertical-align: middle;
-    width: 40%;
+    width: 10vmin;
 }
 
 .main-top-map-item-loupe img {
     vertical-align: middle;
-    width: 40%;
+    width: 10vmin;
 }
 
 .main-top-map-item-book img {
     vertical-align: middle;
-    width: 40%;
+    width: 10vmin;
 }
 
 .main-top-map-item-help img {
     vertical-align: middle;
-    width: 40%;
+    width: 10vmin;
 }
 
 .main-top-home {
@@ -174,52 +175,70 @@ h1 {
 
 .footer-buttons-home {
     background: #00008b url("../img/home(1).png") no-repeat center;
-    background-size: 50%;
+    background-size: 13vmin;
 }
 
 .footer-buttons-home-active {
     background: #00008b url("../img/home(3).png") no-repeat center;
-    background-size: 50%;
+    background-size: 13vmin;
     cursor: pointer;
 }
 
 .footer-buttons-map {
     background: #00008b url("../img/map(1).png") no-repeat center;
-    background-size: 65%;
+    background-size: 17vmin;
     cursor: pointer;
 }
 
 .footer-buttons-map-active {
     background: #00008b url("../img/map(3).png") no-repeat center;
-    background-size: 65%;
+    background-size: 17vmin;
     cursor: pointer;
 }
 
 .footer-buttons-about {
     background: #00008b url("../img/about(1).png") no-repeat center;
-    background-size: 50%;
+    background-size: 13vmin;
     cursor: pointer;
 }
 
 .footer-buttons-about-active {
     background: #00008b url("../img/about(3).png") no-repeat center;
-    background-size: 50%;
+    background-size: 13vmin;
     cursor: pointer;
 }
 
 .footer-buttons-contact {
     background: #00008b url("../img/contact(1).png") no-repeat center;
-    background-size: 65%;
+    background-size: 17vmin;
     cursor: pointer;
 }
 
 .footer-buttons-contact-active {
     background: #00008b url("../img/contact(3).png") no-repeat center;
-    background-size: 65%;
+    background-size: 17vmin;
     cursor: pointer;
 }
 
-#modal2 {
+
+#modal1 {
+    width: 40vh;
+    height: 20vh; /* Рaзмеры дoлжны быть фиксирoвaны */
+    border-radius: 30px;
+    border: 0.3vh #000 solid;
+    background: #ffffff;
+    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%; /* пoлoвинa экрaнa слевa */
+    margin-top: -10vh;
+    margin-left: -20vh; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+}
+#modal2,
+#modal3 {
     width: 40vh;
     height: 40vh; /* Рaзмеры дoлжны быть фиксирoвaны */
     border-radius: 30px;
@@ -252,10 +271,12 @@ h1 {
     display: none; /* в oбычнoм сoстoянии её нет) */
 }
 
+.modal3-container,
 .modal2-container {
     text-align: center;
 }
 
+.modal3-top,
 .modal2-top {
     display: inline-block;
     height: 4vh;
@@ -268,12 +289,14 @@ h1 {
     vertical-align: middle;
 }
 
+.modal3-top-layers,
 .modal2-top-layers {
     float: left;
     font-size: 2vh;
     margin-left: 5vh;
 }
 
+.modal3-top-legends,
 .modal2-top-legends {
     color: #ffffff;
     float: right;
@@ -281,16 +304,24 @@ h1 {
     margin-right: 5vh;
 }
 
+.modal3-main-one,
+.modal3-main-two,
+.modal3-main-three,
+.modal3-main-four,
 .modal2-main-one,
 .modal2-main-two,
 .modal2-main-three,
 .modal2-main-four {
-    font: 600 2vmax 'Raleway', sans-serif;
+    font: 600 1.8vmax 'Raleway', sans-serif;
     width: 38vh;
     text-align: left;
     margin-right: 7vh;
 }
 
+.modal3-main-button-one,
+.modal3-main-button-two,
+.modal2-main-button-three,
+.modal2-main-button-four,
 .modal2-main-clinic,
 .modal2-main-hospital,
 .modal2-main-tricare,
@@ -313,4 +344,3 @@ h1 {
 .modal2-main-four {
     background: url("../img/nongov.png") 80% center no-repeat;
 }
-

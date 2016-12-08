@@ -4,7 +4,8 @@ function initMap() {
     var mapContainer = document.getElementById('map')
     var map = new google.maps.Map(mapContainer, {
         zoom: 4,
-        center: uluru
+        center: uluru,
+        disableDefaultUI: true
     });
     for (var i = 0; i < 5; i++) {
         var pos = {

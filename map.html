@@ -22,13 +22,13 @@
                     <a href="#"><img src="common/img/map.png" alt="Map"></a>
                 </div>
                 <div class="main-top-map-item main-top-map-item-loupe">
-                    <a href="#"><img src="common/img/loupe.png" alt="Loupe"></a>
+                    <a href="#modal1" class="open_modal"><img src="common/img/loupe.png" alt="Loupe"></a>
                 </div>
                 <div class="main-top-map-item main-top-map-item-book">
                     <a href="#modal2" class="open_modal"><img src="common/img/book.png" alt="Book"></a>
                 </div>
                 <div class="main-top-map-item main-top-map-item-help">
-                    <a href="#"><img src="common/img/help.png" alt="Help"></a>
+                    <a href="#modal3" class="open_modal"><img src="common/img/help.png" alt="Help"></a>
                 </div>
             </div>
         </div>
@@ -46,10 +46,12 @@
             <div class="footer-item footer-buttons-contact" onclick="location.href='contact.html';"></div>
         </div>
     </footer>
+    <div id="modal1" class="modal_div">
+        <div class="modal1-container">
 
-
-    <div id="modal2" class="modal_div"> <!-- скрытый див с уникaльным id = modal1 -->
-        <!-- тут вaш кoд -->
+        </div>
+    </div>
+    <div id="modal2" class="modal_div">
         <div class="modal2-container">
             <div class="modal2-top">
                 <span class="modal2-top-layers">Layers</span>
@@ -70,10 +72,29 @@
             </div>
         </div>
     </div>
-    <!--<a href="#modal1" class="open_modal">oткрыть мoдaльнoе oкнo modal1</a>&lt;!&ndash; ссылкa с href="#modal1", oткрoет oкнo с  id = modal1&ndash;&gt;-->
-    <div id="overlay"></div><!-- Пoдлoжкa, oднa нa всю стрaницу -->
+    <div id="modal3" class="modal_div">
+        <div class="modal3-container">
+            <div class="modal3-top">
+                <span class="modal3-top-layers">Layers</span>
+                <span class="modal3-top-legends">Legends</span>
+            </div>
+            <div class="modal3-main">
+                <div class="modal3-main-one">
+                    <p class="modal3-main-button-one">B_One</p>
+                </div>
+                <div class="modal3-main-two">
+                    <p class="modal3-main-button-two">B_Two</p></div>
+                <div class="modal3-main-three">
+                    <p class="modal2-main-button-three">B_Three</p>
+                </div>
+                <div class="modal3-main-four">
+                    <p class="modal2-main-button-four">B_Four</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
 </div>
-
 <script src="common/js/jquery.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD_YCirF19f4sRUQZVnThpHV1qHU897KQ&callback=initMap">
